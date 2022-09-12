@@ -8,5 +8,5 @@ Branche:
 4.  hw-04 (add social-links svg files and section clients)
 5.  hw-05 (add js file toggle modal, modal section and hover effects)
 6.  hw-06 (fix modal, add form in footer, new svg and styles for modal)
-7.  hw-07
+7.  hw-07 (add sass and BEM)
 8.  hw-08
