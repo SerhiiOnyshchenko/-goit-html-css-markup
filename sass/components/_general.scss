@@ -1,10 +1,14 @@
 @import "../utils/colors";
 @import "../utils/transition";
-
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 body {
 	position: relative;
 	height: auto;
-	margin-top: 80px;
+	margin-top: 60px;
 
 	font-family: "Raleway", sans-serif;
 	font-family: "Roboto", sans-serif;
@@ -16,10 +20,10 @@ body {
 	color: getColor("main-color");
 }
 .section-padding {
-	padding: 94px 0;
+	padding: 60px 0;
 }
 .container {
-	width: 1200px;
+	max-width: 480px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -56,10 +60,33 @@ body {
 }
 
 .general-title {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	text-align: center;
 
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
+	font-size: 28px;
+	line-height: 1.18;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		margin-top: 80px;
+	}
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.section-padding {
+		padding: 94px 0;
+	}
+	.container {
+		max-width: 1200px;
+	}
+	.general-title {
+		margin-bottom: 50px;
+		font-size: 36px;
+		line-height: 1.17;
+	}
 }
